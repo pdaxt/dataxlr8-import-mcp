@@ -5,6 +5,10 @@ edition = "2024"
 description = "Bulk data import/export MCP server for DataXLR8 platform"
 repository = "https://github.com/pdaxt/dataxlr8-import-mcp"
 
+
+[lib]
+name = "dataxlr8_import_mcp"
+path = "src/lib.rs"
 [dependencies]
 # MCP SDK
 rmcp = { version = "0.17", features = ["server", "transport-io"] }
